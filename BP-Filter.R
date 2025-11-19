@@ -2,6 +2,7 @@
 library(tidyverse)
 library(readxl)
 
+#path
 choose_input_dir <- function(default = "/Users/tom/Downloads/Staining2") {
   def <- path.expand(default)
   if (interactive() && requireNamespace("tcltk", quietly = TRUE)) {

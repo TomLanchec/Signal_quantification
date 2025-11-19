@@ -3,6 +3,7 @@ library(tidyverse)
 library(readxl)
 library(stringr)
 
+#path
 choose_input_dir <- function(default = "/Users/tom/Downloads/Fiji_Results") {
   def <- path.expand(default)
   if (interactive() && requireNamespace("tcltk", quietly = TRUE)) {
